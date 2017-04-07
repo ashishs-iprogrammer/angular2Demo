@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+.signoff {
+  background: #424242 none repeat scroll 0 0;
+  color: #fff;
+  margin-top: 55px;
+  overflow: hidden;
+  position: relative;
+}
+footer .signoff ul {
+  float: left;
+  padding-top: 30px;
+  padding-left: 0;
+}
+footer ul {
+  list-style: outside none none;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+footer .signoff ul li a {
+  color: inherit;
+  display: inline-block;
+  height: 10px;
+  text-decoration: none;
+  vertical-align: top;
+}
+footer .signoff ul li:first-child {
+  border-left: 0 none;
+  padding-left: 0;
+}
+footer .signoff ul li {
+  display: inline-block;
+  height: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+.copyright {
+  color: #fff;
+  padding-top: 30px;
+}
+.foot-text {
+  color: #989898;
+  font-size: 11px;
+}

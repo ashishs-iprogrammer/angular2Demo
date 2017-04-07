@@ -1,0 +1,66 @@
+body{
+  background: #F8F8F8;
+  font-family: "fira-sans",sans-serif;
+}
+#employer-desc-wrap {
+  background: #f8f8f8 none repeat scroll 0 0;
+  width: 100%;
+  padding-bottom: 4%;
+  padding-top: 2%;
+}
+.job-info-wrap {
+  background: #344d5f none repeat scroll 0 0;
+  color: #fff;
+  padding-bottom: 4%;
+  padding-top: 0;
+}
+.list-aside-right .list-items p {
+  color: #333;
+  font-size: 14px;
+}
+.list-aside-right{
+    background: #F8F8F8;
+    padding: 1%;
+    padding-left: 18px;
+  
+}
+.list-aside-right .list-items {
+  padding-left: 15px;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "ff-netto-web",sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.job-title {
+  padding-bottom: 2%;
+}
+.job-employer {
+  padding-bottom: 18px;
+}
+#job-desc-wrap {
+padding-left: 8%;
+padding-right: 8%;
+padding-top: 4%;
+}
+.cstm-nav-bar {
+  padding-top: 2%;
+}
+.cstm-nav-list a {
+  line-height: 4px;
+}
+#employer-more-wrap {
+  padding-top: 2%;
+}
+.employer-description-main {
+  color: #5a5f5f;
+  font-size: 22px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.cstm-more-text{
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}

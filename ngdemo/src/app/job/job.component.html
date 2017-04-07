@@ -1,0 +1,120 @@
+    <!---Main Container-->
+    <div class="container">
+      
+    <!---Main Header Start----->
+    <nav class="navbar navbar-light bg-faded header clearfix cstm-nav-bar " role="navigation">
+   
+        <!-- Navbar get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-th"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">Employer</a>
+        </div>
+        <!-- Navbar Right Side -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right cstm-nav-list">
+                <li>
+                    <a href="#job-desc-wrap">Job Description</a>
+                </li>
+                <li>
+                    <a href="#employer-desc-wrap">Company Overview</a>
+                </li>
+                <li class="nav-active">
+                    <a class="btn-success btn" href="apply-online">Apply Online</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+    </nav>
+    <!---Main Header Ends------>
+    </div>
+    <!---Section Job Info -->
+    <div class="job-info-wrap">
+    <div class="job-info-main">
+      <div class="row text-center">
+        <div class="col-md-12 col-sm-12 col-sx-12">
+          <h1 class="job-title" [innerHTML]="jobinfo.job_title"></h1>
+          <h3 class="job-employer" [innerHTML]="jobinfo.employer_info.name"></h3>
+          <h4>
+
+            <img src="assets/img/location-small-header.png" alt="">
+            {{jobinfo.employer_info.city}}
+          </h4>
+          <a class="btn btn-success"  data-toggle="tooltip" data-placement="top" title="Click here to apply">Apply Online</a>
+       </div>
+      </div>
+    </div>
+    </div>
+    <!---Section Job Info Ends--->
+    <div class="container">
+        <!---Section job description -->
+    <div id="job-desc-wrap">
+    <div id="job-info-desc">
+      <div class="row">
+        <div class="col-sm-12">
+          
+                       <aside class="list-aside-right col-sm-4 col-sm-push-8">
+                            <h4>Key Highlights</h4>
+                            <ul class="list-items">
+                                <li *ngFor="let hkey of jobinfo.key_highlights" >
+                                    <p>{{hkey}}</p>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="col-sm-8 col-sm-pull-4">
+                            <div class="description-sub-heads">
+                                <h3><em>Job Description</em></h3>
+                                     <div [innerHTML]="jobinfo.job_description"></div>                  
+                            </div>
+                            <div class="description-sub-heads">
+                                <h3><em>Desired Candidate Profile</em></h3>
+                                <ul class="list-items">
+                                  <li *ngFor="let profile of jobinfo.desired_candidate_profile" >
+                                      <p>{{profile}}</p>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+         </div>
+      </div>
+    </div>
+    </div>
+    <!--- Section jon description ends here--->
+     </div>
+    <!--Employer Description Starts Here------>
+    <div id="employer-desc-wrap">
+        <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-sx-12 text-center">
+          <img src="assets/img/job-building.png" alt="">
+          <h2><em [innerHTML]="'About '+jobinfo.employer_info.name"></em></h2>
+          <a href="{{jobinfo.employer_info.site_url}}">{{jobinfo.employer_info.site_url}}</a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-sx-12 text-center">
+          <p class="employer-description-main" [innerHTML]='jobinfo.employer_info.company_desc'></p>
+        </div>
+      </div>
+      
+        </div>
+    </div>
+    <!---Employer description ends Here------->
+    <!--Employer more information ------------>
+    <div class="container">
+    <div id="employer-more-wrap">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-sx-12 text-center">
+          <img src="assets/img/job-more-info.png" alt="">
+          <h2><em [innerHTML]="'More Information'"></em></h2>
+          <hr>
+          
+        </div>
+        <div class="col-md-12 col-sm-12 col-sx-12">
+          <span [innerHTML]="jobinfo.employer_info.more_info" class="cstm-more-text"></span>
+        </div>
+      </div>
+    </div>
+    <!------Employer more information ends---->
+   </div>
